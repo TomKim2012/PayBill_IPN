@@ -44,13 +44,11 @@ class Paybill extends CI_Controller {
 			$amount = number_format ( $inp['mpesa_amt'] );
 			$phoneNumber = $this->format_number($inp ['mpesa_msisdn']);
 			
+			$transaction_registration = $this->paybill->record_transaction ( $inp );
+			echo $transaction_registration['message'];
 			if ($inp ['mpesa_acc']) {
-				$transaction_registration = $this->paybill->record_transaction ( $inp );
-				echo $transaction_registration['message'];
-				
 				$results = $this->paybill->checkCustomer($inp ['mpesa_acc']);
-				
-				
+
 				if($results['success']){
 					$balance = number_format($results['balance']+$amount);
 					//Send SMS to Client
@@ -61,7 +59,7 @@ class Paybill extends CI_Controller {
 				}else{
 					//Send SMS to Client
 					$message ="Dear ". $firstName .", Your MPESA deposit of KES. ". $amount.
-					" confirmed. The Id Number you entered does not exist in our records.Kindly call Branch to Update";
+					" confirmed. However,the Id Number you entered does not exist in our records.Kindly call Branch to Update";
 						
 					//echo $message;
 					$sms_feedback = $this->corescripts->_send_sms2 ($phoneNumber, $message);
@@ -88,7 +86,7 @@ class Paybill extends CI_Controller {
 	}
 	
 	function format_Number($phoneNumber){
-		$formatedNumber="+".$phoneNumber;
+		$formatedNumber="0".substr($phoneNumber,3);
 		return $formatedNumber;
 	}
 }
