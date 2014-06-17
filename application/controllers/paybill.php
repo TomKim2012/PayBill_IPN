@@ -52,15 +52,15 @@ class Paybill extends CI_Controller {
 				if($results['success']){
 					$balance = number_format($results['balance']+$amount);
 					//Send SMS to Client
-					$message ="Dear ". $firstName .", Your deposit of KES. ". $amount.
+					$message ="Dear ". $firstName .", Your MPESA deposit of KES. ". $amount.
 					" is confirmed. New balance KES. ".$balance." .Thanks for banking with us!";
 					
 					//echo $message;
 					$sms_feedback = $this->corescripts->_send_sms ( '0729472421', $message);
 				}else{
 					//Send SMS to Client
-					$message ="Dear ". $firstName .", Your deposit of KES. ". $amount.
-					" confirmed. We could recognise Id Number sent. Kindly call branch to confirm your Id Number";
+					$message ="Dear ". $firstName .", Your MPESA deposit of KES. ". $amount.
+					" confirmed. Always enter your Id Number as account number while sending MPESA deposit";
 						
 					//echo $message;
 					$sms_feedback = $this->corescripts->_send_sms ( '0729472421', $message);
@@ -68,7 +68,7 @@ class Paybill extends CI_Controller {
 				
 				
 			} else {
-				$message = "Dear ".$firstName.". Your deposit of KES. ".$amount ." confirmed. Always enter your ID No. "
+				$message = "Dear ".$firstName.". Your MPESA deposit of KES. ".$amount ." confirmed. Always enter your ID No. "
 							."as the account number. Thanks for banking with us!";
 				echo $message;
 				//$sms_feedback = $this->corescripts->_send_sms ( '0729472421', $message );
