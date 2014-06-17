@@ -23,7 +23,7 @@ class Paybill_model extends CI_Model {
 					'success'=>false,
 			);
 		}else{
-			$balance = $this->getCustTransaction($query->row()->clientcode,2);
+			$balance = $this->getCustTransaction($query->row()->clientcode,2,$idNo);
 			return  array(
 					'success'=>true,
 					'balance'=>$balance
@@ -32,22 +32,22 @@ class Paybill_model extends CI_Model {
 	}
 	
 	
-	function getCustTransaction($customerId, $transactionId){
+	function getCustTransaction($customerId, $transactionId,$idNo){
 		$rs = $this->db->query('SELECT Dbo.SP_GetBalances(\''.$customerId.'\','.$transactionId.') AS balance');
 		//echo $this->db->last_query();
 	
 		$balance = $rs->row()->balance;
 		$this->db->query('Use mobileBanking');
-		$currentBalance = $this->getPrevDeposits($customerId);
+		$currentBalance = $this->getPrevDeposits($idNo);
 		return $balance+$currentBalance;
 	}
 	
-	function getPrevDeposits($customerId){
+	function getPrevDeposits($idNo){
 		//Users transaction for Today
 		$this->db->select_sum('mpesa_amt');
 		$this->db->where(
-				array(	'mpesa_acc'=>$customerId,
-						'isRecorded' => '0'
+				array(	'mpesa_acc'=>$idNo,
+						'isProcessed' => '0'
 				));
 		$query=$this->db->get('PioneerIPN');
 		$amount= $query->row()->mpesa_amt;
