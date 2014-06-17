@@ -42,13 +42,14 @@ class Paybill extends CI_Controller {
 			
 			$firstName = $this->getFirstName($inp['mpesa_sender']); //JOASH NYADUNDO
 			$amount = number_format ( $inp['mpesa_amt'] );
-			
+			$phoneNumber = $this->format_number($inp ['mpesa_msisdn']);
 			
 			if ($inp ['mpesa_acc']) {
 				$transaction_registration = $this->paybill->record_transaction ( $inp );
 				echo $transaction_registration['message'];
 				
 				$results = $this->paybill->checkCustomer($inp ['mpesa_acc']);
+				
 				if($results['success']){
 					$balance = number_format($results['balance']+$amount);
 					//Send SMS to Client
@@ -56,22 +57,22 @@ class Paybill extends CI_Controller {
 					" is confirmed. New balance KES. ".$balance." .Thanks for banking with us!";
 					
 					//echo $message;
-					$sms_feedback = $this->corescripts->_send_sms ( '0729472421', $message);
+					$sms_feedback = $this->corescripts->_send_sms ($phoneNumber, $message);
 				}else{
 					//Send SMS to Client
 					$message ="Dear ". $firstName .", Your MPESA deposit of KES. ". $amount.
-					" confirmed. Always enter your Id Number as account number while sending MPESA deposit";
+					" confirmed. The Id Number you entered does not exist in our records.Kindly call Branch to Update";
 						
 					//echo $message;
-					$sms_feedback = $this->corescripts->_send_sms ( '0729472421', $message);
+					$sms_feedback = $this->corescripts->_send_sms ($phoneNumber, $message);
 				}
 				
 				
 			} else {
 				$message = "Dear ".$firstName.". Your MPESA deposit of KES. ".$amount ." confirmed. Always enter your ID No. "
 							."as the account number. Thanks for banking with us!";
-				echo $message;
-				//$sms_feedback = $this->corescripts->_send_sms ( '0729472421', $message );
+				//echo $message;
+				$sms_feedback = $this->corescripts->_send_sms ( $phoneNumber, $message );
 			}
 		} else {
 			echo "FAIL|The payment could not be completed at this time.Incorrect username / password combination. Pioneer FSA";
@@ -84,6 +85,11 @@ class Paybill extends CI_Controller {
 		$firstName = $fullNames[0];
 		$customString=substr($firstName,0,1).strtolower(substr($firstName,1));
 		return $customString;
+	}
+	
+	function format_Number($phoneNumber){
+		$formatedNumber="+".$phoneNumber;
+		return $formatedNumber;
 	}
 }
 
