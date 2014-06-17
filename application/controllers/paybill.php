@@ -50,21 +50,21 @@ class Paybill extends CI_Controller {
 				
 				$results = $this->paybill->checkCustomer($inp ['mpesa_acc']);
 				
+				
 				if($results['success']){
 					$balance = number_format($results['balance']+$amount);
 					//Send SMS to Client
 					$message ="Dear ". $firstName .", Your MPESA deposit of KES. ". $amount.
 					" is confirmed. New balance KES. ".$balance." .Thanks for banking with us!";
-					
-					//echo $message;
-					$sms_feedback = $this->corescripts->_send_sms ($phoneNumber, $message);
+
+					$sms_feedback = $this->corescripts->_send_sms2 ($phoneNumber, $message);
 				}else{
 					//Send SMS to Client
 					$message ="Dear ". $firstName .", Your MPESA deposit of KES. ". $amount.
 					" confirmed. The Id Number you entered does not exist in our records.Kindly call Branch to Update";
 						
 					//echo $message;
-					$sms_feedback = $this->corescripts->_send_sms ($phoneNumber, $message);
+					$sms_feedback = $this->corescripts->_send_sms2 ($phoneNumber, $message);
 				}
 				
 				
@@ -72,7 +72,7 @@ class Paybill extends CI_Controller {
 				$message = "Dear ".$firstName.". Your MPESA deposit of KES. ".$amount ." confirmed. Always enter your ID No. "
 							."as the account number. Thanks for banking with us!";
 				//echo $message;
-				$sms_feedback = $this->corescripts->_send_sms ( $phoneNumber, $message );
+				$sms_feedback = $this->corescripts->_send_sms2 ( $phoneNumber, $message );
 			}
 		} else {
 			echo "FAIL|The payment could not be completed at this time.Incorrect username / password combination. Pioneer FSA";
