@@ -4083,6 +4083,7 @@ mpesa_amt = 614.0
 mpesa_sender = ROSE KALUMA
 business_number = 510510
 =============================
+<<<<<<< HEAD
 id = 8940827
 orig = MPESA
 dest = 254726383457
@@ -112245,10 +112246,57 @@ dest = 254726383457
 tstamp = 2014-06-17 13:41:33
 text = FF58FV767 Confirmed. on 17/6/14 at 1:41 PM Ksh100.00 received from JOSEPH MAWEU 254718067581. Account Number O2307457 New Utility balance is Ksh195,929.00
 customer_id = 537
+=======
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+user = mTransport
+pass = transport@2014
+routemethod_id = 2
+routemethod_name = HTTP
+mpesa_code = EV32VZ788
+mpesa_acc = 27842116
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = 
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+user = mTransport
+pass = transport@2014
+routemethod_id = 2
+routemethod_name = HTTP
+mpesa_code = EV32VZ788
+mpesa_acc = 27842116
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = 
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF58FV767
 mpesa_acc = O2307457
 mpesa_msisdn = 254718067581
@@ -112264,10 +112312,28 @@ dest = 254726383457
 tstamp = 2014-06-17 13:55:25
 text = FF58KT246 Confirmed. on 17/6/14 at 1:55 PM Ksh200.00 received from JONATHAN NDAKA 254723157246. Account Number 9550465 New Utility balance is Ksh196,129.00
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27842116
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = 
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF58KT246
 mpesa_acc = 9550465
 mpesa_msisdn = 254723157246
@@ -112283,10 +112349,28 @@ dest = 254726383457
 tstamp = 2014-06-17 14:30:20
 text = FF58WR774 Confirmed. on 17/6/14 at 2:29 PM Ksh2,200.00 received from BERNARD OUMA 254722386217. Account Number 6445874 New Utility balance is Ksh198,329.00
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27842116
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = 
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF58WR774
 mpesa_acc = 6445874
 mpesa_msisdn = 254722386217
@@ -112302,10 +112386,28 @@ dest = 254726383457
 tstamp = 2014-06-17 14:57:30
 text = FF59GB684 Confirmed. on 17/6/14 at 2:57 PM Ksh500.00 received from CHARLES MUKUHA 254727482033. Account Number PF 000 329 New Utility balance is Ksh1
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27842116
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = 
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF59GB684
 mpesa_acc = PF 000 329
 mpesa_msisdn = 254727482033
@@ -112321,10 +112423,28 @@ dest = 254726383457
 tstamp = 2014-06-17 14:58:43
 text = FF59GN000 Confirmed. on 17/6/14 at 2:58 PM Ksh200.00 received from MILTON OPONDO 254717538703. Account Number 10906468 New Utility balance is Ksh165,996.00
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27842116
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = 
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF59GN000
 mpesa_acc = 10906468
 mpesa_msisdn = 254717538703
@@ -112340,10 +112460,28 @@ dest = 254726383457
 tstamp = 2014-06-17 15:20:13
 text = FF59NP720 Confirmed. on 17/6/14 at 3:19 PM Ksh500.00 received from STEPHENSON NYAMAI 254725026251. Account Number pf-001-329 New Utility balance is K
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27842116
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = 
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF59NP720
 mpesa_acc = PF-001-329
 mpesa_msisdn = 254725026251
@@ -112359,10 +112497,28 @@ dest = 254726383457
 tstamp = 2014-06-17 16:07:45
 text = FF60EK266 Confirmed. on 17/6/14 at 4:07 PM Ksh9,800.00 received from STANLEY KUREBA 254722846391. Account Number 7167789 New Utility balance is Ksh14
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27842116
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = 
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF60EK266
 mpesa_acc = 7167789
 mpesa_msisdn = 254722846391
@@ -112378,10 +112534,28 @@ dest = 254726383457
 tstamp = 2014-06-17 16:13:53
 text = FF60GQ598 Confirmed. on 17/6/14 at 4:13 PM Ksh200.00 received from DAVID MBOGO 254722979713. Account Number 22152480 New Utility balance is Ksh146,463.00
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27842116
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = 
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF60GQ598
 mpesa_acc = 22152480
 mpesa_msisdn = 254722979713
@@ -112397,10 +112571,28 @@ dest = 254726383457
 tstamp = 2014-06-17 16:20:00
 text = FF60IU262 Confirmed. on 17/6/14 at 4:19 PM Ksh100.00 received from john muiruri 254723900017. Account Number 25528214 New Utility balance is Ksh146,563.00
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = B0726560
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = 
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF60IU262
 mpesa_acc = 25528214
 mpesa_msisdn = 254723900017
@@ -112416,10 +112608,28 @@ dest = 254726383457
 tstamp = 2014-06-17 16:31:50
 text = FF60NF779 Confirmed. on 17/6/14 at 4:31 PM Ksh2,000.00 received from GRACE MWANIKI 254723761954. Account Number wangechi collect New Utility balance 
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = 
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF60NF779
 mpesa_acc = WANGECHI COLLECT
 mpesa_msisdn = 254723761954
@@ -112435,10 +112645,28 @@ dest = 254726383457
 tstamp = 2014-06-17 16:38:45
 text = FF60PO821 Confirmed. on 17/6/14 at 4:38 PM Ksh3,200.00 received from SALOME WAMBUI NYANJORA 254724886327. Account Number 24385679 New Utility balance
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = 
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF60PO821
 mpesa_acc = 24385679
 mpesa_msisdn = 254724886327
@@ -112454,10 +112682,28 @@ dest = 254726383457
 tstamp = 2014-06-17 16:48:04
 text = FF60TF295 Confirmed. on 17/6/14 at 4:47 PM Ksh11,450.00 received from KEZIA NJARAMBA 254707389574. Account Number keziahs-collection New Utility bala
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = 
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF60TF295
 mpesa_acc = KEZIAHS-COLLECTION
 mpesa_msisdn = 254707389574
@@ -112473,10 +112719,28 @@ dest = 254726383457
 tstamp = 2014-06-17 16:48:45
 text = FF60TP007 Confirmed. on 17/6/14 at 4:48 PM Ksh200.00 received from BILHAH GICHANGI 254712689269. Account Number bilhahs cltn New Utility balance is K
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27841212
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = 
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF60TP007
 mpesa_acc = BILHAHS CLTN
 mpesa_msisdn = 254712689269
@@ -112492,10 +112756,28 @@ dest = 254726383457
 tstamp = 2014-06-17 16:48:56
 text = FF60TQ766 Confirmed. on 17/6/14 at 4:48 PM Ksh1,100.00 received from MARY MAINA 254726593507. Account Number Mary's Collectn New Utility balance is K
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27841212
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = 
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF60TQ766
 mpesa_acc = MARY'S COLLECTN
 mpesa_msisdn = 254726593507
@@ -112511,10 +112793,28 @@ dest = 254726383457
 tstamp = 2014-06-17 16:50:59
 text = FF60UL618 Confirmed. on 17/6/14 at 4:50 PM Ksh100.00 received from KEZIA NJARAMBA 254707389574. Account Number keziahs-collection New Utility balance
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27841212
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = 
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF60UL618
 mpesa_acc = KEZIAHS-COLLECTION
 mpesa_msisdn = 254707389574
@@ -112530,10 +112830,28 @@ dest = 254726383457
 tstamp = 2014-06-17 16:52:16
 text = FF60UY873 Confirmed. on 17/6/14 at 4:52 PM Ksh29,960.00 received from CAROLINE MURITHI 254700353463. Account Number carol New Utility balance is Ksh1
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27841212
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = 
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF60UY873
 mpesa_acc = CAROL
 mpesa_msisdn = 254700353463
@@ -112549,10 +112867,28 @@ dest = 254726383457
 tstamp = 2014-06-17 16:55:37
 text = FF60WD025 Confirmed. on 17/6/14 at 4:55 PM Ksh12,600.00 received from CATHERINE MAINA 254713054741. Account Number Catherine collect New Utility bala
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27841212
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = 
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF60WD025
 mpesa_acc = CATHERINE COLLECT
 mpesa_msisdn = 254713054741
@@ -112568,10 +112904,28 @@ dest = 254726383457
 tstamp = 2014-06-17 17:00:34
 text = FF60YE643 Confirmed. on 17/6/14 at 5:00 PM Ksh2,000.00 received from SIMON NJUGUNA KAMAU 254722257901. Account Number pf-003-2822 New Utility balance
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27841212
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = 
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF60YE643
 mpesa_acc = PF-003-2822
 mpesa_msisdn = 254722257901
@@ -112587,10 +112941,28 @@ dest = 254726383457
 tstamp = 2014-06-17 16:57:49
 text = FF60XC736 Confirmed. on 17/6/14 at 4:57 PM Ksh4,000.00 received from SIMON MWANGI WAMBUGU 254723990288. Account Number 22966099 New Utility balance i
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27841212
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = TOM MURIRANJA
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF60XC736
 mpesa_acc = 22966099
 mpesa_msisdn = 254723990288
@@ -112606,10 +112978,28 @@ dest = 254726383457
 tstamp = 2014-06-17 17:02:26
 text = FF60YV480 Confirmed. on 17/6/14 at 5:01 PM Ksh4,200.00 received from RICHARD MWEBI NYAMBANE 254726253376. Account Number 22124311 New Utility balance
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27841212
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = TOM MURIRANJA
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF60YV480
 mpesa_acc = 22124311
 mpesa_msisdn = 254726253376
@@ -112625,10 +113015,28 @@ dest = 254726383457
 tstamp = 2014-06-17 17:07:54
 text = FF61AZ212 Confirmed. on 17/6/14 at 5:07 PM Ksh23,100.00 received from MILKA WAINAINA 254729486373. Account Number MILCAH COLLECTION New Utility balan
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27841212
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = TOM MURIRANJA
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF61AZ212
 mpesa_acc = MILCAH COLLECTION
 mpesa_msisdn = 254729486373
@@ -112644,10 +113052,28 @@ dest = 254726383457
 tstamp = 2014-06-17 17:07:54
 text = FF61BC422 Confirmed. on 17/6/14 at 5:07 PM Ksh4,400.00 received from GRACE KIBUCHI 254729859354. Account Number sunbeam New Utility balance is Ksh244,873.00
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27841212
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = TOM MURIRANJA
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF61BC422
 mpesa_acc = SUNBEAM
 mpesa_msisdn = 254729859354
@@ -112663,10 +113089,28 @@ dest = 254726383457
 tstamp = 2014-06-17 17:12:38
 text = FF61CY682 Confirmed. on 17/6/14 at 5:12 PM Ksh300.00 received from JOSEPHINE ONYACH 254711156553. Account Number 28346220 New Utility balance is Ksh2
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27841212
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = TOM MURIRANJA
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF61CY682
 mpesa_acc = 28346220
 mpesa_msisdn = 254711156553
@@ -112682,10 +113126,28 @@ dest = 254726383457
 tstamp = 2014-06-17 17:18:06
 text = FF61FF207 Confirmed. on 17/6/14 at 5:17 PM Ksh800.00 received from ESTHER WANDERWA MWANGI 254726338575. Account Number 10847003 New Utility balance i
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27841212
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = TOM MURIRANJA
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF61FF207
 mpesa_acc = 10847003
 mpesa_msisdn = 254726338575
@@ -112701,10 +113163,28 @@ dest = 254726383457
 tstamp = 2014-06-17 17:19:35
 text = FF61FP638 Confirmed. on 17/6/14 at 5:18 PM Ksh800.00 received from SEBASTIAN KABUE 254718335367. Account Number seba collection New Utility balance i
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27841212
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = TOM MURIRANJA
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF61FP638
 mpesa_acc = SEBA COLLECTION
 mpesa_msisdn = 254718335367
@@ -112720,10 +113200,28 @@ dest = 254726383457
 tstamp = 2014-06-17 17:20:34
 text = FF61FZ349 Confirmed. on 17/6/14 at 5:19 PM Ksh12,910.00 received from REGINAH MAINGI 254717352037. Account Number Regina collection New Utility balan
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27841212
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = TOM MURIRANJA
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF61FZ349
 mpesa_acc = REGINA COLLECTION
 mpesa_msisdn = 254717352037
@@ -112739,10 +113237,28 @@ dest = 254726383457
 tstamp = 2014-06-17 18:03:06
 text = FF61YL554 Confirmed. on 17/6/14 at 6:02 PM Ksh3,000.00 received from LUCY WANJIRU 254722265900. Account Number 21488594 New Utility balance is Ksh262,683.00
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27841212
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = TOM MURIRANJA
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF61YL554
 mpesa_acc = 21488594
 mpesa_msisdn = 254722265900
@@ -112758,10 +113274,28 @@ dest = 254726383457
 tstamp = 2014-06-17 18:26:32
 text = FF62IX248 Confirmed. on 17/6/14 at 6:26 PM Ksh1,000.00 received from SUSAN MWANGI 254723639330. Account Number Emerald kitty New Utility balance is K
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27841212
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = TOM MURIRANJA
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF62IX248
 mpesa_acc = EMERALD KITTY
 mpesa_msisdn = 254723639330
@@ -112777,10 +113311,28 @@ dest = 254726383457
 tstamp = 2014-06-17 18:38:53
 text = FF62OH363 Confirmed. on 17/6/14 at 6:38 PM Ksh250.00 received from JEFFERSON KITUKU 254715351445. Account Number 21586954 New Utility balance is Ksh2
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27841212
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = TOM MURIRANJA
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF62OH363
 mpesa_acc = 21586954
 mpesa_msisdn = 254715351445
@@ -112796,10 +113348,28 @@ dest = 254726383457
 tstamp = 2014-06-17 18:42:27
 text = FF62QA720 Confirmed. on 17/6/14 at 6:42 PM Ksh220.00 received from JEFFERSON KITUKU 254715351445. Account Number 29482078 New Utility balance is Ksh2
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = 27841212
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = TOM MURIRANJA
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF62QA720
 mpesa_acc = 29482078
 mpesa_msisdn = 254715351445
@@ -112815,10 +113385,28 @@ dest = 254726383457
 tstamp = 2014-06-17 19:04:04
 text = FF62ZU083 Confirmed. on 17/6/14 at 7:03 PM Ksh1,000.00 received from BENEDICT NGURE KAGUAI 254727710155. Account Number pf00302573 New Utility balanc
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = B0726560
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = TOM MURIRANJA
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF62ZU083
 mpesa_acc = PF00302573
 mpesa_msisdn = 254727710155
@@ -112834,10 +113422,28 @@ dest = 254726383457
 tstamp = 2014-06-17 19:19:18
 text = FF63FW552 Confirmed. on 17/6/14 at 7:19 PM Ksh500.00 received from PAUL MBUNGWA 254720465156. Account Number 23164621 New Utility balance is Ksh265,653.00
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = B0726560
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = TOM MURIRANJA
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF63FW552
 mpesa_acc = 23164621
 mpesa_msisdn = 254720465156
@@ -112853,10 +113459,28 @@ dest = 254726383457
 tstamp = 2014-06-17 20:27:29
 text = FF64FU403 Confirmed. on 17/6/14 at 8:27 PM Ksh360.00 received from JOHN GITHAIGA 254721361799. Account Number 11178025 New Utility balance is Ksh266,013.00
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = B0726560
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = TOM MURIRANJA
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF64FU403
 mpesa_acc = 11178025
 mpesa_msisdn = 254721361799
@@ -112872,10 +113496,28 @@ dest = 254726383457
 tstamp = 2014-06-17 20:29:30
 text = FF64GJ810 Confirmed. on 17/6/14 at 8:29 PM Ksh2,000.00 received from JOHN GITHINJI 254713300240. Account Number    0574971 New Utility balance is Ksh
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = B0726560
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = TOM MURIRANJA
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF64GJ810
 mpesa_acc = 0574971
 mpesa_msisdn = 254713300240
@@ -112891,10 +113533,28 @@ dest = 254726383457
 tstamp = 2014-06-17 20:45:09
 text = FF64LD597 Confirmed. on 17/6/14 at 8:44 PM Ksh2,500.00 received from JAMES MUKUNA 254722143563. Account Number 10655892 New Utility balance is Ksh270,513.00
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = B0726560
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = TOM MURIRANJA
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF64LD597
 mpesa_acc = 10655892
 mpesa_msisdn = 254722143563
@@ -112910,10 +113570,28 @@ dest = 254726383457
 tstamp = 2014-06-17 21:11:54
 text = FF64SU230 Confirmed. on 17/6/14 at 9:11 PM Ksh100.00 received from MAGDALINE MUROCHIA 254725866766. Account Number  00325 New Utility balance is Ksh
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = B0726560
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = TOM MURIRANJA
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF64SU230
 mpesa_acc = 00325
 mpesa_msisdn = 254725866766
@@ -112929,10 +113607,28 @@ dest = 254726383457
 tstamp = 2014-06-17 21:18:52
 text = FF64UL838 Confirmed. on 17/6/14 at 9:18 PM Ksh5,720.00 received from Lucy Muthoni 254721473316. Account Number Lucys Collection New Utility balance i
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = B0726560
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = TOM MURIRANJA
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF64UL838
 mpesa_acc = LUCYS COLLECTION
 mpesa_msisdn = 254721473316
@@ -112948,10 +113644,28 @@ dest = 254726383457
 tstamp = 2014-06-17 22:25:40
 text = FF65GZ431 Confirmed. on 17/6/14 at 10:25 PM Ksh3,000.00 received from WILLIS OWADE 254715817036. Account Number  0646554 New Utility balance is Ksh27
 customer_id = 537
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = B0726560
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = TOM MURIRANJA
+business_number = 356932
+=============================
+id = 24872475
+orig = MPESA
+dest = 254726400680
+tstamp = 2014-03-27 12:24:55
+text = EV32VZ788 Confirmed.on 27/3/14 at 12:24 PMKsh10.00 received from 254729472421 TOM MURIRANJA.New Account balance is Ksh170.00
+customer_id = 1394
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
 user = pioneerfsa
 pass = financial@2013
 routemethod_id = 2
 routemethod_name = HTTP
+<<<<<<< HEAD
 mpesa_code = FF65GZ431
 mpesa_acc = 0646554
 mpesa_msisdn = 254715817036
@@ -112960,3 +113674,13 @@ mpesa_trx_time = 10:25 PM
 mpesa_amt = 3000.0
 mpesa_sender = WILLIS OWADE
 business_number = 510510
+=======
+mpesa_code = EV32VZ788
+mpesa_acc = B0726560
+mpesa_msisdn = 
+mpesa_trx_date = 27/3/14
+mpesa_trx_time = 12:24 PM
+mpesa_amt = 10.0
+mpesa_sender = TOM MURIRANJA
+business_number = 356932
+>>>>>>> 32b46273a4ed2a15ef9baab461893d4cb680ed9f
