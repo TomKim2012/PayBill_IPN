@@ -55,15 +55,15 @@ class Paybill extends CI_Controller {
 					$message ="Dear ". $firstName .", Your deposit of KES. ". $amount.
 					" is confirmed. New balance KES. ".$balance." .Thanks for banking with us!";
 					
-					echo $message;
-					//$sms_feedback = $this->corescripts->_send_sms ( '0729472421', $message);
+					//echo $message;
+					$sms_feedback = $this->corescripts->_send_sms ( '0729472421', $message);
 				}else{
 					//Send SMS to Client
 					$message ="Dear ". $firstName .", Your deposit of KES. ". $amount.
 					" confirmed. We could recognise Id Number sent. Kindly call branch to confirm your Id Number";
 						
-					echo $message;
-					//$sms_feedback = $this->corescripts->_send_sms ( '0729472421', $message);
+					//echo $message;
+					$sms_feedback = $this->corescripts->_send_sms ( '0729472421', $message);
 				}
 				
 				
