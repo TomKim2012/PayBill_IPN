@@ -78,7 +78,7 @@ class CoreScripts {
 			 * Bug:: If you put shortcode - It fails completely.
 			 */
 			
-			$results = $gateway->sendMessage ( $recipient, $message );
+			$results = $gateway->sendMessage ( $recipient, $message, $shortCode);
 			
 			// Read in the gateway response and persist if necessary
 			$response = $results [0];
