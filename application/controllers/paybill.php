@@ -50,7 +50,7 @@ class Paybill extends CI_Controller {
 				$results = $this->paybill->checkCustomer($inp ['mpesa_acc']);
 
 				if($results['success']){
-					$balance = number_format($results['balance']+$amount);
+					$balance = number_format($results['balance']);
 					//Send SMS to Client
 					$message ="Dear ". $firstName .", Your MPESA deposit of KES. ". $amount.
 					" is confirmed. New balance KES. ".$balance." .Thanks for banking with us!";
