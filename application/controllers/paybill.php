@@ -53,7 +53,9 @@ class Paybill extends CI_Controller {
 					$balance = number_format($results['balance']);
 					//Send SMS to Client
 					$message ="Dear ". $firstName .", Your MPESA deposit of KES. ". $amount.
-					" is confirmed. New balance KES. ".$balance." .Thanks for banking with us!";
+					" is confirmed and credited to your account.Thanks for banking with us!";
+
+					//New balance KES. ".$balance."
 
 					$sms_feedback = $this->corescripts->_send_sms2 ($phoneNumber, $message);
 				}else{
