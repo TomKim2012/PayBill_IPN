@@ -3,6 +3,15 @@ class Paybill_model extends CI_Model {
 	
 	/*PAYBILL Custom Function */
 	function record_transaction($input){
+		if($input['business_number']=='510511'){
+			$query=$this->db->insert('PioneerIPN_Akiba', $input);
+			if($query){
+			return array(
+					'message'=>"OK|Thankyou, IPN has been successfully been saved.",
+					);
+			}
+		}
+
 		$query=$this->db->insert('PioneerIPN', $input);
 		if($query){
 		return array(
