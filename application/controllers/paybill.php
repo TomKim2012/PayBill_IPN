@@ -4,11 +4,11 @@ require APPPATH . '/libraries/AfricasTalkingGateway.php';
 class Paybill extends CI_Controller {
 	function Paybill() {
 		parent::__construct ();
-		$this->load->model ('Paybill_model', 'paybill' );
-		$this->load->library ('CoreScripts' );
+		$this->load->model ( 'Paybill_model', 'paybill' );
+		$this->load->library ( 'CoreScripts' );
+		$this->load->library ( 'curl' );
 		$this->load->helper ( 'file' );
 	}
-	
 	function index() {
 		// Log the details
 		$myFile = "application/controllers/mpesalog.txt";
@@ -40,17 +40,17 @@ class Paybill extends CI_Controller {
 		
 		if ($user == 'pioneerfsa' && $pass == 'financial@2013') {
 			
-			$firstName = $this->getFirstName($inp['mpesa_sender']); //JOASH NYADUNDO
-			$amount = number_format ( $inp['mpesa_amt'] );
-			$phoneNumber = $this->format_number($inp ['mpesa_msisdn']);
+			$firstName = $this->getFirstName ( $inp ['mpesa_sender'] ); // JOASH NYADUNDO
+			$amount = number_format ( $inp ['mpesa_amt'] );
+			$phoneNumber = $this->format_number ( $inp ['mpesa_msisdn'] );
 			
-			$transaction_registration = $this->paybill->record_transaction ( $inp );
-			echo $transaction_registration['message'];
 			if ($inp ['mpesa_acc']) {
-				$results = $this->paybill->checkCustomer($inp ['mpesa_acc']);
-
-				if($results['success']){
-					$balance = number_format($results['balance']);
+				$results = $this->paybill->checkCustomer ( $inp ['mpesa_acc'], $phoneNumber );
+				
+				if ($results ['success']) {
+					$actualBal = $results ['balance'] + $amount;
+					$balance = number_format ( $actualBal );
+					// Send SMS to Client
 					//Send SMS to Client
 					$message ="Dear ". $firstName .", Your MPESA deposit of KES. ". $amount.
 					" is confirmed and credited to your account.Thanks for banking with us!";
@@ -58,38 +58,74 @@ class Paybill extends CI_Controller {
 					//New balance KES. ".$balance."
 
 					$sms_feedback = $this->corescripts->_send_sms2 ($phoneNumber, $message);
-				}else{
-					//Send SMS to Client
+					
+				} else {
+					// Create Task in Wira
+					// echo $results['clCode'];
+					$this->createTask ( $inp, $results );
+					
+					// Send SMS to Client
 					$message ="Dear ". $firstName .", Your MPESA deposit of KES. ". $amount.
-					" confirmed. However,the Id Number you entered does not exist in our records.Kindly call Branch to Update";
-						
-					//echo $message;
-					$sms_feedback = $this->corescripts->_send_sms2 ($phoneNumber, $message);
+					" confirmed. However,the Id Number you entered does not exist in our records.Kindly call 0705300035 to Update";
+					 $sms_feedback = $this->corescripts->_send_sms2 ($phoneNumber, $message);
 				}
-				
-				
 			} else {
-				$message = "Dear ".$firstName.". Your MPESA deposit of KES. ".$amount ." confirmed. Always enter your ID No. "
-							."as the account number. Thanks for banking with us!";
-				//echo $message;
+				$message = "Dear " . $firstName . ". Your MPESA deposit of KES. " . $amount . " confirmed." . " Always enter your ID No. " . "as the account number. Thanks for banking with us!";
 				$sms_feedback = $this->corescripts->_send_sms2 ( $phoneNumber, $message );
 			}
+			
+			// Record Trx to Database
+			$transaction_registration = $this->paybill->record_transaction ( $inp );
+			echo $transaction_registration ['message'];
 		} else {
-			echo "FAIL|The payment could not be completed at this time.Incorrect username / password combination. Pioneer FSA";
+			echo "FAIL|The payment could not be completed at this time.Incorrect username / password combination." . "Pioneer FSA";
 		}
 	}
-	
-	
-	function getFirstName($names){
-		$fullNames = explode(" ",$names);
-		$firstName = $fullNames[0];
-		$customString=substr($firstName,0,1).strtolower(substr($firstName,1));
+	function createTask($inp, $results) {
+		$serverUrl = "http://54.187.137.159:8080/wira/ipnserv";
+		
+		$parameters = array (
+				'senderName' => $inp ['mpesa_sender'],
+				'senderPhone' => $this->format_number ( $inp ['mpesa_msisdn'] ),
+				'enteredId' => $inp ['mpesa_acc'],
+				'mpesaCode' => $inp ['mpesa_code'],
+				'mpesaDate' => $inp ['mpesa_trx_date'],
+				'mpesaTime' => $inp ['mpesa_trx_time'],
+				'mpesaAmount' => $inp ['mpesa_amt'],
+				'customerNames' => $results ['customerNames'],
+				'clCode' => $results ['clCode'] 
+		);
+		
+		$response = $this->curl->simple_get ( $serverUrl, $parameters );
+		
+		echo "BPM Response:" . $response;
+	}
+	function getFirstName($names) {
+		$fullNames = explode ( " ", $names );
+		$firstName = $fullNames [0];
+		$customString = substr ( $firstName, 0, 1 ) . strtolower ( substr ( $firstName, 1 ) );
 		return $customString;
 	}
-	
-	function format_Number($phoneNumber){
-		$formatedNumber="0".substr($phoneNumber,3);
+	function format_Number($phoneNumber) {
+		$formatedNumber = "0" . substr ( $phoneNumber, 3 );
 		return $formatedNumber;
+	}
+	function updateDetails() {
+		$trxNo = $this->input->get ( 'mpesaCode' );
+		$idNo = $this->input->get ( 'idNo' );
+		$clientCode = $this ->input->get ( 'clientCode' );
+		
+		if (isset ( $trxNo )) {
+			$update = $this->paybill->updateRecords ( $trxNo, $idNo, $clientCode );
+			
+			if ($update) {
+				echo "Correctly updated";
+			} else {
+				echo "Failed to update";
+				header("HTTP/1.1 500 Internal Server Error");
+			}
+		}
+		
 	}
 }
 
