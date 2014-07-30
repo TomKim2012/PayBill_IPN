@@ -1,16 +1,25 @@
 <?php
 class Paybill_model extends CI_Model {
 	
-	/* PAYBILL Custom Function */
-	function record_transaction($input) {
-		$this->db->query ( 'Use MobileBanking' );
-		$query = $this->db->insert ( 'PioneerIPN', $input );
-		if ($query) {
-			return array (
-					'message' => "OK|Thankyou, IPN has been successfully been saved." 
-			);
+	/*PAYBILL Custom Function */
+	function record_transaction($input){
+		if($input['business_number']=='510511'){
+			$query=$this->db->insert('PioneerIPN_Akiba', $input);
+			if($query){
+			return array(
+					'message'=>"OK|Thankyou, IPN has been successfully been saved.",
+					);
+			}
+		}
+
+		$query=$this->db->insert('PioneerIPN', $input);
+		if($query){
+		return array(
+				'message'=>"OK|Thankyou, IPN has been successfully been saved.",
+				);
 		}
 	}
+	
 	function checkCustomer($idNo, $phoneNumber) {
 		// Check Customer by Id
 		$this->db->query ( 'Use MergeFinals' );
@@ -84,7 +93,7 @@ class Paybill_model extends CI_Model {
 		$input = array('docnum'=>$idNo);
 		$this->db->where ( 'clientcode', $clientCode );
 		$query = $this->db->update ( 'clientdoc', $input );
-		echo $this->db->last_query();
+		//echo $this->db->last_query();
 		
 		if ($query) {
 			return true;

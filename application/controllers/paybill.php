@@ -51,18 +51,23 @@ class Paybill extends CI_Controller {
 					$actualBal = $results ['balance'] + $amount;
 					$balance = number_format ( $actualBal );
 					// Send SMS to Client
-					$message = "Dear " . $firstName . ", Your MPESA deposit of KES. " . $amount . " is confirmed.Thanks for banking with us!";
+					//Send SMS to Client
+					$message ="Dear ". $firstName .", Your MPESA deposit of KES. ". $amount.
+					" is confirmed and credited to your account.Thanks for banking with us!";
+
+					//New balance KES. ".$balance."
+
+					$sms_feedback = $this->corescripts->_send_sms2 ($phoneNumber, $message);
 					
-					// New balance KES. ".$balance."
-					// $sms_feedback = $this->corescripts->_send_sms2 ($phoneNumber, $message);
 				} else {
 					// Create Task in Wira
 					// echo $results['clCode'];
 					$this->createTask ( $inp, $results );
 					
 					// Send SMS to Client
-					$message = "Dear " . $firstName . ", Your MPESA deposit of KES. " . $amount . " confirmed. However,the Id Number you entered does not exist in our records." . "Kindly call Branch to Update";
-					// $sms_feedback = $this->corescripts->_send_sms2 ($phoneNumber, $message);
+					$message ="Dear ". $firstName .", Your MPESA deposit of KES. ". $amount.
+					" confirmed. However,the Id Number you entered does not exist in our records.Kindly call 0705300035 to Update";
+					 $sms_feedback = $this->corescripts->_send_sms2 ($phoneNumber, $message);
 				}
 			} else {
 				$message = "Dear " . $firstName . ". Your MPESA deposit of KES. " . $amount . " confirmed." . " Always enter your ID No. " . "as the account number. Thanks for banking with us!";
@@ -77,7 +82,7 @@ class Paybill extends CI_Controller {
 		}
 	}
 	function createTask($inp, $results) {
-		$serverUrl = "http://localhost:8080/wira-0.9/ipnserv";
+		$serverUrl = "http://54.187.137.159:8080/wira/ipnserv";
 		
 		$parameters = array (
 				'senderName' => $inp ['mpesa_sender'],
