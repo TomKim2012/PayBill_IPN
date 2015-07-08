@@ -74,7 +74,7 @@ class Paybill extends CI_Controller {
 	}
 	
 	function createTask($inp, $results) {
-		$serverUrl = "http://54.187.137.159:8080/wira/ipnserv";
+		$serverUrl = "http://127.0.0.1:8888/ipnserv";
 		
 		$parameters = array (
 				'senderName' => $inp ['mpesa_sender'],
@@ -85,13 +85,16 @@ class Paybill extends CI_Controller {
 				'mpesaTime' => $inp ['mpesa_trx_time'],
 				'mpesaAmount' => $inp ['mpesa_amt'],
 				'customerNames' => $results ['customerNames'],
-				'clCode' => $results ['clCode'] 
+				'clCode' => $results ['clCode'],
+				'docType' => 'MPESAIPN'
 		);
 		
 		$response = $this->curl->simple_get ( $serverUrl, $parameters );
 		
+		//Should be saved in the database
 		echo "BPM Response:" . $response;
 	}
+	
 	function getFirstName($names) {
 		$fullNames = explode ( " ", $names );
 		$firstName = $fullNames [0];
@@ -103,9 +106,9 @@ class Paybill extends CI_Controller {
 		return $formatedNumber;
 	}
 	function updateDetails() {
-		$trxNo = $this->input->get ( 'mpesaCode' );
-		$idNo = $this->input->get ( 'idNo' );
-		$clientCode = $this ->input->get ( 'clientCode' );
+		$trxNo = $this->input->post( 'mpesaCode' );
+		$idNo = $this->input->post( 'idNo' );
+		$clientCode = $this ->input->post( 'clientCode' );
 		
 		if (isset ( $trxNo )) {
 			$update = $this->paybill->updateRecords ( $trxNo, $idNo, $clientCode );
