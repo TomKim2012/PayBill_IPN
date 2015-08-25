@@ -3,6 +3,7 @@ class Paybill_model extends CI_Model {
 	
 	/*PAYBILL Custom Function */
 	function record_transaction($input){
+		$this->db->query ( 'Use mobileBanking' );
 		if($input['business_number']=='510511'){
 			$query=$this->db->insert('PioneerIPN_Akiba', $input);
 			if($query){
@@ -14,8 +15,12 @@ class Paybill_model extends CI_Model {
 
 		$query=$this->db->insert('PioneerIPN', $input);
 		if($query){
-		return array(
-				'message'=>"OK|Thankyou, IPN has been successfully been saved.",
+			return array(
+					'message'=>"OK|Thankyou, IPN has been successfully been saved.",
+					);
+		}else{
+			return array(
+				 'message'=>"Transaction not saved, Query didn't run...",
 				);
 		}
 	}
@@ -29,7 +34,17 @@ class Paybill_model extends CI_Model {
 		$query = $this->db->get ( 'clientdoc' );
 		
 		if ($query->num_rows () < 1) {
-			return $this->checkCustomer_by_phone ( $phoneNumber );
+			//return $this->checkCustomer_by_phone ( $phoneNumber );
+
+			$this->db-> where ('statno', $idNo);
+			$query = $this->db->get('cluster');		
+			if ($query->num_rows > 0) {
+				return array (
+						'success' => true
+					);
+			echo $this->db->last_query();
+			}
+
 		} else {
 			$balance = $this->getCustTransaction ( $query->row ()->clientcode, 2, $idNo );
 			return array (

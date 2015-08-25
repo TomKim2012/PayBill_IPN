@@ -10,15 +10,6 @@ class Paybill extends CI_Controller {
 		$this->load->helper ( 'file' );
 	}
 	function index() {
-		// Log the details
-		$myFile = "application/controllers/mpesalog.txt";
-		$input = $this->input->get ( NULL, TRUE );
-		write_file ( $myFile, "=============================\n", 'a+' );
-		foreach ( $input as $var => $value ) {
-			if (! write_file ( $myFile, "$var = $value\n", 'a+' )) {
-				echo "Unable to write to file!";
-			}
-		}
 		
 		// Get the input details
 		$inp = array (
@@ -35,6 +26,11 @@ class Paybill extends CI_Controller {
 				'mpesa_amt' => $this->input->get ( 'mpesa_amt' ),
 				'mpesa_sender' => $this->input->get ( 'mpesa_sender' ) 
 		);
+
+		// $this->transferRequest($inp);
+		// echo "OK|Saved Successful.";
+		// return;
+
 		$user = $this->input->get ( 'user' );
 		$pass = $this->input->get ( 'pass' );
 		
@@ -49,8 +45,8 @@ class Paybill extends CI_Controller {
 				
 				if ($results ['success']) {
 					// Send SMS to Client
-					$message ="Dear ". $firstName .", MPESA deposit of ". $amount." confirmed."
-					."Own a prime plot by raising 10% deposit,pay balance in 2yrs.Offer:Kamulu 349K,Ruiru 499K,Rongai 599K.0705300035";
+					$message =$firstName .", MPESA deposit of ". $amount." confirmed."
+					."Own a plot by raising 10% deposit,pay balance in 2yrs.Offer:Kamulu 349K,Kitengela 549K,Ruiru&Rongai 499K.0705300035";
 					$sms_feedback = $this->corescripts->_send_sms2 ($phoneNumber, $message);
 					
 				} else {					
@@ -71,8 +67,18 @@ class Paybill extends CI_Controller {
 		} else {
 			echo "FAIL|The payment could not be completed at this time.Incorrect username / password combination." . "Pioneer FSA";
 		}
+	
 	}
 	
+	function transferRequest($parameters) {
+		$serverUrl = "http://localhost:8030/mTransport/index.php";
+		
+		$response = $this->curl->simple_get ( $serverUrl, $parameters );
+		
+		// echo "Transfered>>".$phone;
+		echo $response;
+	}
+
 	function createTask($inp, $results) {
 		$serverUrl = "http://127.0.0.1:8888/ipnserv";
 		
